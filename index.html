@@ -1174,52 +1174,12 @@ function flip(card){
   <p>Test your vocabulary and understanding!</p>
 </div>
 <style>
-    .section-divider{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:60px 0 30px;
+  <style>
+.quiz-container{
+max-width:900px;
+margin:30px auto;
+font-family:Arial,sans-serif;
 }
-
-.section-divider::before,
-.section-divider::after{
-    content:"";
-    flex:1;
-    height:2px;
-    background:linear-gradient(to right,#7b5cff,#39b5ff);
-}
-
-.section-divider span{
-    margin:0 18px;
-    font-size:32px;
-}
-
-.quiz-title{
-    text-align:center;
-    margin-bottom:35px;
-}
-
-.quiz-title h2{
-    font-size:2rem;
-    color:#7b5cff;
-    margin-bottom:10px;
-}
-
-.quiz-title p{
-    color:#777;
-    font-size:1rem;
-}
-</style>
-<style>
-.quiz-container {
-  width: 92%;         /* يجعل الكويز يأخذ المساحة الكاملة للشاشة في الهاتف */
-  max-width: 900px;
-  margin: 30px auto;
-  font-family: Arial, sans-serif;
-  clear: both;        /* أهم سطر: يمنع الكويز من الدخول بجانب البطاقات العائمة ويجبره على النزول لأسفل */
-  box-sizing: border-box; 
-}
-
 
 .quiz-card{
 background:#fff;
@@ -1267,6 +1227,7 @@ color:#721c24;
 .disabled{
 pointer-events:none;
 }
+</style>
 </style>
 
 <script>
