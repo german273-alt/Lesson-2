@@ -1211,11 +1211,15 @@ function flip(card){
 }
 </style>
 <style>
-.quiz-container{
-max-width:900px;
-margin:30px auto;
-font-family:Arial,sans-serif;
+.quiz-container {
+  width: 92%;         /* يجعل الكويز يأخذ المساحة الكاملة للشاشة في الهاتف */
+  max-width: 900px;
+  margin: 30px auto;
+  font-family: Arial, sans-serif;
+  clear: both;        /* أهم سطر: يمنع الكويز من الدخول بجانب البطاقات العائمة ويجبره على النزول لأسفل */
+  box-sizing: border-box; 
 }
+
 
 .quiz-card{
 background:#fff;
