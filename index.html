@@ -4,33 +4,65 @@
   <meta charset="UTF-8">
  
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #f5f5f5;
-    }
+    <style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 10px;
+    box-sizing: border-box;
+  }
 
-    /* الصورة في بداية الصفحة */
-    .lesson-image {
-      width: 80%;
-      max-width: 600px;
-      height: auto;
-      margin: 20px auto;
-      display: block;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
+  /* الصورة في بداية الصفحة */
+  .lesson-image {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  }
 
-    /* صندوق الصوت */
-    .audio-box {
-      margin-top: 30px;
-      padding: 20px;
-      background: #fff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      display: inline-block;
-    }
+  /* صندوق الصوت */
+  .audio-box {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    display: block;
+    max-width: 400px;
+  }
+
+  /* --- كود سحري لإصلاح توزيع البطاقات والكويز على الهواتف --- */
+  
+  /* إذا كانت البطاقات موضوعة داخل حاوية، هذا السطر يضمن تنظيمها */
+  div, section {
+    clear: both; 
+  }
+
+  /* تنسيق ذكي متجاوب للكويز */
+  .quiz-container {
+    width: 100% !important;
+    max-width: 800px !important;
+    margin: 40px auto !important;
+    clear: both !important;
+    display: block !important;
+    box-sizing: border-box;
+  }
+
+  .quiz-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+    text-align: left; /* لجعل الأسئلة الألمانية تبدأ من اليسار بشكل صحيح */
+  }
+</style>
+
   </style>
 </head>
   <meta charset="UTF-8">
@@ -1173,62 +1205,7 @@ function flip(card){
   <h2>Deutsch Quiz</h2>
   <p>Test your vocabulary and understanding!</p>
 </div>
-<style>
-  <style>
-.quiz-container{
-max-width:900px;
-margin:30px auto;
-font-family:Arial,sans-serif;
-}
 
-.quiz-card{
-background:#fff;
-border-radius:14px;
-padding:20px;
-margin-bottom:20px;
-box-shadow:0 4px 12px rgba(0,0,0,.08);
-}
-
-.question{
-font-size:20px;
-font-weight:bold;
-margin-bottom:15px;
-color:#1d3557;
-}
-
-.option{
-display:block;
-padding:12px;
-margin:8px 0;
-background:#f7f7f7;
-border-radius:10px;
-cursor:pointer;
-transition:.25s;
-border:2px solid transparent;
-}
-
-.option:hover{
-background:#eef5ff;
-}
-
-.correct{
-background:#d4edda!important;
-border-color:#28a745!important;
-color:#155724;
-font-weight:bold;
-}
-
-.wrong{
-background:#f8d7da!important;
-border-color:#dc3545!important;
-color:#721c24;
-}
-
-.disabled{
-pointer-events:none;
-}
-</style>
-</style>
 
 <script>
 function checkAnswer(el,correct){
